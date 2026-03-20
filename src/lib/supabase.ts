@@ -1,5 +1,4 @@
 import { createBrowserClient } from '@supabase/ssr';
-import { cookies } from 'next/headers';
 import { type CookieOptions } from '@supabase/ssr';
 
 // Create a single instance of the Supabase client for client-side usage
