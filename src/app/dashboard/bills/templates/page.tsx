@@ -134,13 +134,18 @@ export default function BillTemplatesPage() {
       header_text: template.header_text || "",
       footer_text: template.footer_text || "",
       logo_url: template.logo_url || "",
-      bank_details: template.bank_details || {
+      bank_details: template.bank_details ? {
+        bank_name: template.bank_details.bank_name || "",
+        account_number: template.bank_details.account_number || "",
+        ifsc_code: template.bank_details.ifsc_code || "",
+        account_name: template.bank_details.account_name || "",
+        payment_qr_url: template.bank_details.payment_qr_url,
+        payment_qr_file_name: template.bank_details.payment_qr_file_name,
+      } : {
         bank_name: "",
         account_number: "",
         ifsc_code: "",
         account_name: "",
-        payment_qr_url: "",
-        payment_qr_file_name: "",
       },
       terms_and_conditions: template.terms_and_conditions || [""],
     });
