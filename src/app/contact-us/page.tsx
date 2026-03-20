@@ -129,6 +129,7 @@ export default function ContactUs() {
             </div>
             <p className="text-gray-700 mt-4">
               For quickest response, email us first. Phone support is available for emergencies. Most issues resolved within 24 hours.
+            </p>
           </section>
 
           <section>
