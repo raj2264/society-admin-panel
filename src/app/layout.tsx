@@ -4,6 +4,7 @@ import { ThemeProvider } from "../components/ui/theme-provider";
 import { ReactQueryProvider } from "../components/providers/react-query-provider";
 import SupabaseProviderClient from "../components/supabase-provider-client";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
             </SupabaseProviderClient>
           </ReactQueryProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
